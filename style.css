@@ -1,0 +1,132 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish: hsl(277, 10%, 46%);
+  --dar-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+
+body,
+html {
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: var(--dark-cyan);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-ballon-top {
+  position: absolute;
+  top: -80%;
+  right: 60%;
+  z-index: 9;
+}
+
+.bg-ballon-bottom {
+  position: absolute;
+  bottom: -80%;
+  left: 60%;
+  z-index: 9;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 370px;
+  width: 300px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff url(/assets/bg-pattern-card.svg) no-repeat;
+  border-radius: 16px;
+  position: relative;
+}
+
+.card-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-profile img {
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.name-profile {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.age-profile {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.city-profile {
+  padding-top: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid hsl(0, 0%, 59%);
+  padding: 0.5rem;
+}
+
+.social-numbs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.item-social-numbs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.social-description {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
