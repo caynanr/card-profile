@@ -68,7 +68,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff url(/assets/bg-pattern-card.svg) no-repeat;
+  background: #fff url(./assets/bg-pattern-card.svg) no-repeat;
   border-radius: 16px;
   position: relative;
 }
